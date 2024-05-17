@@ -1,17 +1,17 @@
 export var pythonURI;
 if (location.hostname === "localhost") {
-        pythonURI = "http://localhost:8086";
+        pythonURI = "http://localhost:8124";
 } else if (location.hostname === "127.0.0.1") {
-        pythonURI = "http://127.0.0.1:8086";
+        pythonURI = "http://127.0.0.1:8124";
 } else {
         pythonURI = "https://flask.nighthawkcodingsociety.com";
 }
 
 export var javaURI;
 if (location.hostname === "localhost") {
-        javaURI = "http://localhost:8085";
+        javaURI = "http://localhost:8124";
 } else if (location.hostname === "127.0.0.1") {
-        javaURI = "http://127.0.0.1:8085";
+        javaURI = "http://127.0.0.1:8124";
 } else {
         javaURI = "https://spring.nighthawkcodingsociety.com";
 }

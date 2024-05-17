@@ -1,6 +1,6 @@
 # Configuration, override port with usage: make PORT=4200
 PORT ?= 8125
-REPO_NAME ?= dsfp
+REPO_NAME ?= derp
 LOG_FILE = /tmp/jekyll$(PORT).log
 
 SHELL = /bin/bash -c

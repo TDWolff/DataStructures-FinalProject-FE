@@ -11,13 +11,13 @@
 $ mdkir vscode
 cd vscode
 git clone https://github.com/nighthawkcoders/teacher_portfolio.git
-cd ~/vscode/teacher_portfolio/scripts
+cd ~/vscode/DataStructures-FinalProject-FE/scripts
 ./activate_ubuntu.sh
 
 # Run the head command, leave this terminal open ...
 #    the head command shows remaining instructions  ...
 #    find this spot and continue on
-head -34 ~/vscode/teacher_portfolio/scripts/activate_ubuntu.sh
+head -34 ~/vscode/DataStructures-FinalProject-FE/scripts/activate_ubuntu.sh
 
 # Start a new terminal ...
 #    the "new" terminal is the command terminal ...
