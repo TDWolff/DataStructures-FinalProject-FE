@@ -140,7 +140,6 @@ search_exclude: true
     }
 
     window.onload = function() {
-        javaDatabase();
         pythonDatabase();
     };
 </script>

@@ -25,9 +25,9 @@ search_exclude: true
     </div>
 </div>
 <script>
-    document.getElementById('logoutButton').addEventListener('click', function() {
-        document.cookie = 'jwt=; Max-Age=0; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC';
-        console.log('Logged out');
-        window.location.href = "/derp/";
-    });
+document.getElementById('logoutButton').addEventListener('click', function() {
+    document.cookie = "jwt=; Domain=127.0.0.1; Secure; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT";
+    console.log('Logged out');
+    window.location.href = "/derp/";
+});
 </script>
