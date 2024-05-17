@@ -82,7 +82,7 @@ search_exclude: true
 
 
 <script type="module">
-    import { login, javaURI, pythonURI, fetchOptions } from '/teacher_portfolio/assets/js/api/config.js';
+    import { login, javaURI, pythonURI, fetchOptions } from '/derp/assets/js/api/config.js';
 
     // Method to login user
     window.javaLogin = function() {
