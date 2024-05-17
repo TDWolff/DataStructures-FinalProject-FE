@@ -20,5 +20,6 @@ header_pages:
   - navigation/search.html
   - navigation/login.md
   - navigation/logout.md
+  - navigation/create.md
 
 

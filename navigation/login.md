@@ -57,7 +57,7 @@ search_exclude: true
         // Set login options
         const options = {};
         // Authentication endpoint
-        options.URL = pythonURI + '/api/users/authenticate';
+        options.URL = 'http://127.0.0.1:8124/api/users/authenticate';
         options.callback = pythonDatabase;  // method to call on success
         options.message = "python-message"; 
         // Set fetch options
@@ -68,6 +68,7 @@ search_exclude: true
             password: document.getElementById("python-password").value,
         };
         login(options);
+        window.href = '/derp/navigation/login.html';
     }
 
     function pythonDatabase() {
