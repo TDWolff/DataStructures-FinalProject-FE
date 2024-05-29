@@ -56,7 +56,8 @@ export function login(options) {
         })
         .catch(error => {
                 // Handle network errors
+                window.location.reload();
                 console.log('Possible CORS or Service Down error: ' + error);
-                document.getElementById(options.message).textContent = 'Possible CORS or service down error: ' + error;
+                //document.getElementById(options.message).textContent = 'Possible CORS or service down error: ' + error;
         });
 }

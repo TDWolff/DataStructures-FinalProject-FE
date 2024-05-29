@@ -26,7 +26,20 @@ search_exclude: true
 </div>
 <script>
 document.getElementById('logoutButton').addEventListener('click', function() {
-    document.cookie = 'jwt=; Max-Age=-9999999999999; path=/; samesite=None; secure';
-    console.log('Logged out');
+    fetch('http://127.0.0.1:8124/api/users/authenticate', {
+        method: 'DELETE',
+        credentials: 'include'
+    })
+    .then(response => {
+        if (response.ok) {
+            console.log('logout successful');
+            //document.cookie = 'jwt=; Max-Age=0; path=/';
+            window.location.href = '/derp/';
+        } else {
+            console.error('failed logout');
+        }
+    })
+    .catch(error => console.error('Error:', error));
 });
+
 </script>
